@@ -1,0 +1,10 @@
+version: "3"
+
+services: 
+  memcache:
+    image: memcached
+    network_mode: host
+    ports: 
+      - 11211:11211
+    command: "memcached -m 64 -U 11211"
+
